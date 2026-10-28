@@ -398,8 +398,10 @@ a:visited { color: #66cc00; }
 .sidebar-content strong { color: #99ff00; }
 
 .profile-pic {
+  display: block;
   width: 100%;
-  height: 150px;
+  aspect-ratio: 4/5;
+  overflow: hidden;
   background-color: #000d00;
   background-image: repeating-linear-gradient(
     0deg,
@@ -650,7 +652,7 @@ a:visited { color: #66cc00; }
       <div class="sidebar-box">
         <div class="sidebar-header">&gt;&gt; Me</div>
         <div class="profile-pic">
-          <img src="images/Adam.jpeg" ><br />
+          <img src="images/Adam.jpeg" alt="Adam" /><br />
         </div>
         <div class="sidebar-content" style="text-align:center;">
           <strong>Adam</strong><br />
