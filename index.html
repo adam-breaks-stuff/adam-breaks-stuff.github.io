@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>::: Adam Clarkson ::: THE official site :::</title>
+<style type="text/css">
+
+* { margin: 0; padding: 0; }
+
+body {
+  background-color: #000000;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 0, 0.015) 2px,
+      rgba(0, 255, 0, 0.015) 4px
+    );
+  color: #99ff00;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  cursor: crosshair;
+}
+
+a { color: #ccff00; text-decoration: underline; }
+a:hover { color: #ffffff; background-color: #66ff00; text-decoration: none; }
+a:visited { color: #66cc00; }
+
+#wrapper {
+  width: 780px;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+}
+
+#header {
+  background-color: #000000;
+  border: 3px solid #66ff00;
+  border-bottom: none;
+  padding: 14px 16px 10px 16px;
+  text-align: center;
+  position: relative;
+}
+
+#header::before {
+  content: ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>";
+  display: block;
+  color: #33aa00;
+  font-size: 10px;
+  letter-spacing: 0px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+#header::after {
+  content: "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<";
+  display: block;
+  color: #33aa00;
+  font-size: 10px;
+  letter-spacing: 0px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+#header h1 {
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #ccff00;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow:
+    0 0 10px #66ff00,
+    0 0 20px #33cc00,
+    3px 3px 0px #003300;
+  line-height: 1;
+}
+
+#header h1 span { color: #ffffff; }
+
+.header-deco {
+  color: #33aa00;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin: 6px 0 4px 0;
+}
+
+.tagline {
+  color: #66cc00;
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.tagline span {
+  color: #ccff00;
+  font-style: normal;
+  font-weight: bold;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+.marquee-bar {
+  background-color: #001a00;
+  border-left: 3px solid #66ff00;
+  border-right: 3px solid #66ff00;
+  border-bottom: 2px solid #33aa00;
+  border-top: 2px solid #33aa00;
+  padding: 4px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 11px;
+  color: #66ff00;
+}
+
+.marquee-inner {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(800px); }
+  100% { transform: translateX(-100%); }
+}
+
+
+#nav {
+  background-color: #001a00;
+  border: 3px solid #66ff00;
+  border-top: none;
+  border-bottom: 5px double #99ff00;
+  padding: 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#nav ul { list-style: none; padding: 4px 0; }
+#nav ul li { display: inline; }
+
+#nav ul li a {
+  display: inline-block;
+  color: #99ff00;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Impact, "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 12px;
+  border: 1px solid #336600;
+  margin: 2px;
+  background-color: #001a00;
+}
+
+#nav ul li a:hover {
+  background-color: #66ff00;
+  color: #000000;
+  border-color: #ccff00;
+  text-decoration: none;
+}
+
+#nav ul li a.active {
+  background-color: #33aa00;
+  color: #000000;
+  border-color: #99ff00;
+}
+
+/* ======== COLUMNS ======== */
+#content-wrap { overflow: hidden; }
+#main { float: left; width: 498px; }
+#sidebar { float: right; width: 268px; }
+
+.box {
+  background-color: #000d00;
+  border: 2px solid #33aa00;
+  border-top: 4px solid #99ff00;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.box-header {
+  background-color: #001a00;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #001a00 0px, #001a00 8px,
+    #002200 8px, #002200 10px
+  );
+  border-bottom: 2px solid #33aa00;
+  padding: 6px 10px;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ccff00;
+  text-shadow: 0 0 8px #66ff00;
+}
+
+.box-header .deco { color: #336600; margin: 0 6px; }
+
+.box-content {
+  padding: 12px;
+  color: #99cc00;
+  line-height: 1.7;
+}
+
+.box-content p { margin-bottom: 8px; }
+.box-content p:last-child { margin-bottom: 0; }
+.box-content strong { color: #ccff00; }
+
+/* ======== ABOUT TABLE ======== */
+.info-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.info-table tr { border-bottom: 1px solid #112200; }
+.info-table tr:last-child { border-bottom: none; }
+.info-table td { padding: 5px 8px; vertical-align: top; }
+.info-table td.label {
+  color: #66ff00;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100px;
+  white-space: nowrap;
+  border-right: 1px dashed #224400;
+}
+
+.divider {
+  border: none;
+  border-top: 1px dashed #224400;
+  margin: 10px 0;
+}
+
+/* ======== SKILL BARS ======== */
+.skill-row { margin-bottom: 8px; }
+
+.skill-label {
+  font-size: 10px;
+  color: #66cc00;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skill-label strong { color: #ccff00; }
+
+.skill-track {
+  background-color: #001100;
+  border: 1px solid #224400;
+  height: 12px;
+  position: relative;
+}
+
+.skill-fill {
+  background-color: #33cc00;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #33cc00 0px, #33cc00 6px,
+    #44ff00 6px, #44ff00 8px
+  );
+  height: 12px;
+  box-shadow: 0 0 6px #33ff00;
+}
+
+/* ======== PORTFOLIO ======== */
+.portfolio-item {
+  border-bottom: 1px dashed #224400;
+  padding: 10px 0;
+  overflow: hidden;
+}
+.portfolio-item:first-child { padding-top: 0; }
+.portfolio-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+.portfolio-thumb {
+  float: left;
+  width: 80px;
+  height: 60px;
+  background-color: #001100;
+  border: 2px solid #336600;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  color: #336600;
+  text-align: center;
+  font-family: "Courier New", monospace;
+}
+
+.portfolio-info { overflow: hidden; }
+
+.portfolio-info h4 {
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 13px;
+  color: #ccff00;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px #66ff00;
+}
+
+.portfolio-info p {
+  font-size: 11px;
+  color: #669900;
+  margin-bottom: 5px !important;
+}
+
+.portfolio-info .links { font-size: 10px; }
+.portfolio-info .links a { color: #99ff00; }
+.portfolio-info .links a:hover { color: #000000; background-color: #99ff00; }
+
+.contact-form label {
+  display: block;
+  font-size: 10px;
+  color: #66ff00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+  margin-top: 10px;
+}
+.contact-form label:first-child { margin-top: 0; }
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  background-color: #000d00;
+  border: 1px solid #336600;
+  border-left: 3px solid #66ff00;
+  color: #99ff00;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  padding: 5px 8px;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #99ff00;
+  outline: none;
+  background-color: #001a00;
+  box-shadow: 0 0 6px #33ff00;
+}
+
+.contact-form textarea { height: 80px; resize: vertical; }
+
+.btn {
+  background-color: #33cc00;
+  color: #000000;
+  border: 2px solid #99ff00;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 7px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 0 10px #33ff00;
+}
+
+.btn:hover {
+  background-color: #99ff00;
+  box-shadow: 0 0 20px #99ff00;
+}
+
+.sidebar-box {
+  background-color: #000d00;
+  border: 2px solid #33aa00;
+  border-top: 4px solid #66ff00;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  background-color: #001a00;
+  border-bottom: 2px solid #224400;
+  padding: 5px 10px;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #99ff00;
+  text-shadow: 0 0 6px #33ff00;
+}
+
+.sidebar-content {
+  padding: 10px;
+  font-size: 11px;
+  color: #669900;
+  line-height: 1.7;
+}
+
+.sidebar-content strong { color: #99ff00; }
+
+.profile-pic {
+  width: 100%;
+  height: 150px;
+  background-color: #000d00;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent, transparent 3px,
+    rgba(0,255,0,0.03) 3px, rgba(0,255,0,0.03) 4px
+  );
+  border-bottom: 2px solid #224400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #224400;
+  font-size: 10px;
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
+
+.quick-links { list-style: none; padding: 0; margin: 0; }
+.quick-links li { border-bottom: 1px dashed #1a3300; padding: 4px 0; }
+.quick-links li:last-child { border-bottom: none; }
+.quick-links li a { color: #66cc00; text-decoration: none; font-size: 11px; }
+.quick-links li a::before { content: ">_ "; color: #33aa00; }
+.quick-links li a:hover { color: #000000; background-color: #66ff00; text-decoration: none; }
+
+.counter {
+  background-color: #000000;
+  color: #33ff00;
+  font-family: "Courier New", monospace;
+  font-size: 24px;
+  letter-spacing: 6px;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #224400;
+  text-shadow: 0 0 10px #33ff00;
+}
+
+.counter-label {
+  font-size: 9px;
+  color: #336600;
+  text-align: center;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* NOW PLAYING */
+.now-block {
+  background-color: #000d00;
+  border: 1px solid #1a3300;
+  border-left: 3px solid #66ff00;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  font-size: 10px;
+}
+.now-block .label { color: #336600; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 2px; font-size: 9px; }
+.now-block strong { color: #99cc00; }
+
+.tag {
+  display: inline-block;
+  background-color: #001a00;
+  border: 1px solid #336600;
+  color: #66cc00;
+  font-size: 10px;
+  font-family: "Courier New", monospace;
+  padding: 2px 6px;
+  margin: 2px 2px 2px 0;
+}
+.tag:hover { border-color: #99ff00; color: #ccff00; cursor: default; box-shadow: 0 0 4px #33ff00; }
+
+
+.note {
+  background-color: #000d00;
+  border-left: 3px solid #336600;
+  padding: 5px 10px;
+  font-size: 10px;
+  color: #336600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.updated {
+  font-size: 10px;
+  color: #336600;
+  font-family: "Courier New", monospace;
+  margin-top: 8px;
+}
+
+
+.skull-bar {
+  text-align: center;
+  color: #224400;
+  font-size: 13px;
+  letter-spacing: 6px;
+  padding: 4px 0;
+  border-top: 1px dashed #1a3300;
+  border-bottom: 1px dashed #1a3300;
+  margin: 10px 0;
+}
+
+.award-badge {
+  background-color: #001a00;
+  border: 2px solid #ccff00;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #33ff00;
+}
+
+.award-badge .star { font-size: 20px; color: #ccff00; text-shadow: 0 0 10px #99ff00; }
+.award-badge p { font-size: 9px; color: #669900; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+.award-badge strong { color: #ccff00; font-family: Impact, sans-serif; font-size: 13px; letter-spacing: 2px; display: block; margin-top: 2px; }
+
+#footer {
+  background-color: #000d00;
+  border: 2px solid #336600;
+  border-top: 4px double #66ff00;
+  color: #336600;
+  font-size: 10px;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  padding: 12px;
+  clear: both;
+  margin-top: 4px;
+  letter-spacing: 1px;
+}
+
+#footer a { color: #66cc00; }
+#footer a:hover { color: #000000; background-color: #66ff00; }
+
+#footer .bottom-deco {
+  color: #224400;
+  font-size: 11px;
+  letter-spacing: 4px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+  <div id="header">
+    <div class="header-deco">*** *** *** *** *** *** *** *** *** *** *** *** *** ***</div>
+    <h1>::: <span>Adam</span>Clarkson :::</h1>
+    <p class="header-deco" style="margin-top:6px;">~*~ THE official homepage ~*~</p>
+    <p class="tagline">// breaker of things // fixer of things  // Phoenix, AZ // <span>Works For Ice Cream</span> //</p>
+    <div class="header-deco" style="margin-top:6px;">*** *** *** *** *** *** *** *** *** *** *** *** *** ***</div>
+  </div>
+
+  <div class="marquee-bar">
+    <span class="marquee-inner">
+      &nbsp;&nbsp;&nbsp;*** JUST A BIT OF A NASTALGIA IN THIS CRAZY FAST PACED WORLD *** Reach out via linked in if you would like to connect!  ***&nbsp;&nbsp;&nbsp;
+    </span>
+  </div>
+
+  <!-- NAV -->
+  <div id="nav">
+    <ul>
+      <li><a href="#about" class="active">[ home ]</a></li>
+      <li><a href="#about">[ about ]</a></li>
+      <li><a href="#skills">[ Skills ]</a></li>
+      <li><a href="#portfolio">[ work ]</a></li>
+      <li><a href="#contact">[ contact ]</a></li>
+    </ul>
+  </div>
+
+  <div id="content-wrap">
+
+    <!-- MAIN -->
+    <div id="main">
+
+      <!-- ABOUT -->
+      <div class="box" id="about">
+        <div class="box-header"><span class="deco">&gt;&gt;</span> about me <span class="deco">&lt;&lt;</span></div>
+        <div class="box-content">
+
+          <div class="skull-bar">&#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760;</div>
+
+          <p>
+            Hello. I'm <strong>Adam</strong>, a <strong>Sr. Cyber Security Engineer</strong> from <strong>Phoenix, AZ</strong>.
+            I've focused on security for 8 years and IT for over a decade.
+          </p>
+          <p>
+            This is my site. I made it to showcase my work and connect with others in the field.
+          </p>
+
+          <div class="skull-bar">-=[ &#9760; ]=-&nbsp;&nbsp;-=[ &#9760; ]=-&nbsp;&nbsp;-=[ &#9760; ]=-&nbsp;&nbsp;-=[ &#9760; ]=-&nbsp;&nbsp;-=[ &#9760; ]=-</div>
+
+          <table class="info-table">
+            <tr><td class="label">&gt; name</td><td>Adam Clarkson</td></tr>
+            <tr><td class="label">&gt; location</td><td>Phoenix, AZ</td></tr>
+            <tr><td class="label">&gt; job</td><td>Sr. Cyber Security Engineer @ Best Western</td></tr>
+            <tr><td class="label">&gt; school</td><td>MSU Denver, 2016</td></tr>
+            <tr><td class="label">&gt; into</td><td>coding, music, baking, traveling</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="box" id="skills">
+        <div class="box-header"><span class="deco">&gt;&gt;</span> skills <span class="deco">&lt;&lt;</span></div>
+        <div class="box-content">
+
+          <div class="note">&gt;&gt; Things I do.</div>
+          <div class="skill-row">
+            <div class="skill-label"><strong>Automation</strong> -- expert // 8+ yrs</div>
+            <div class="skill-track"><div class="skill-fill" style="width:95%;"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><strong>Cloud Security</strong> -- expert // 7+ yrs</div>
+            <div class="skill-track"><div class="skill-fill" style="width:90%;"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><strong>Application Security</strong> -- expert // 5+ yrs</div>
+            <div class="skill-track"><div class="skill-fill" style="width:90%;"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><strong>Security Operations</strong> -- strong // 5+ yrs</div>
+            <div class="skill-track"><div class="skill-fill" style="width:85%;"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label"><strong>Mentorship</strong> -- strong // 3+ yrs</div>
+            <div class="skill-track"><div class="skill-fill" style="width:80%;"></div></div>
+          </div>
+
+          <hr class="divider" />
+
+          <p style="margin-bottom:6px; color:#336600; font-size:10px; text-transform:uppercase; letter-spacing:1px;">&gt;&gt; also messing with:</p>
+          <p>
+            <span class="tag">python</span>
+            <span class="tag">bash</span>
+            <span class="tag">tag three</span>
+            <span class="tag">tag four</span>
+            <span class="tag">tag five</span>
+            <span class="tag">tag six</span>
+          </p>
+        </div>
+      </div>
+
+
+    </div><!-- end #main -->
+
+    <div id="sidebar">
+
+      <div class="sidebar-box">
+        <div class="sidebar-header">&gt;&gt; Me</div>
+        <div class="profile-pic">
+          <img src="images/Adam.jpeg" ><br />
+        </div>
+        <div class="sidebar-content" style="text-align:center;">
+          <strong>Adam</strong><br />
+          Sr. Security Engineer // Phoenix, AZ<br />
+        </div>
+        <ul class="quick-links">
+        <li><a href="https://www.linkedin.com/in/adam-clarkson-27812b41" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="award-badge">
+        <div class="star">&#9733; &#9733; &#9733;</div>
+        <strong>TOOL HIGHLIGHT</strong>
+        <p>A cool tool I like that I think is worth looking at.</p>
+      </div>
+
+      <div class="sidebar-box">
+        <div class="sidebar-header">&gt;&gt; My work</div>
+        <div class="sidebar-content">
+          <ul class="quick-links">
+            <li><a href="https://github.com/adam-breaks-stuff" target="_blank">GitHub</a></li>
+            <li><a href="https://substack.com/@thesecuritystudio">My Substack</a></li>
+            <li><a href="#">old stuff</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- end #sidebar -->
+
+  </div><!-- end #content-wrap -->
+
+  <div id="footer">
+    <span class="bottom-deco">-={ &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; }=-</span>
+    <p>
+      &copy; Adam Clarkson &nbsp;::&nbsp;
+      <a href="#">home</a> &nbsp;::&nbsp;
+      <a href="#about">about</a> &nbsp;::&nbsp;
+      <a href="#contact">contact</a>
+    </p>
+    <span class="bottom-deco" style="display:block; margin-top:6px;">-={ &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; &#9760; }=-</span>
+  </div>
+
+</div><!-- end footer -->
+
+</body>
+</html>
